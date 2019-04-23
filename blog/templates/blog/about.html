@@ -1,4 +1,19 @@
 {% extends "blog/base.html" %}
+{% load static %}
 {% block content %}
-    <h1>About Page!</h1>
+<head>
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <canvas
+      class="canvas"
+      height="600"
+      width="600"
+      style="background-color: #3e3e3e">
+    </canvas>
+    <h1 class="score"></h1>
+  </body>
+  <!-- <script type="text/javascript" src="{% static 'js/fruit' %}"></script>
+  <script type="text/javascript" src="{% static 'js/snake.js' %}"></script> -->
+  <script type="text/javascript" src="{% static 'js/draw.js' %}"></script>
 {% endblock content %}
